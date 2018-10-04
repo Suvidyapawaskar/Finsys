@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="regression">
+<test name="verify addition and multiplication of 2number">
+<parameter name="ric" value="r10"></parameter>
+<parameter name="owner" value="suvidya"></parameter>
+<parameter name="type" value="regression"></parameter>
+<parameter name="a1" value="10"></parameter>
+<parameter name="a2" value="10"></parameter>
+<parameter name="ea" value="10"></parameter>
+<parameter name="m1" value="10"></parameter>
+<parameter name="m2" value="10"></parameter>
+<parameter name="em" value="10"></parameter>
+	<classes>
+		<class name="ejagruti_finsys.finsys.Addition_Subtraction">
+			<methods>
+				<include name="Addition"></include>
+			</methods>
+		</class>
+	<class name="ejagruti_finsys.finsys.Multiplication_Division">
+			<methods>
+				<include name="Multiplication"></include>
+			</methods>
+		</class>
+	</classes>
+</test>
+    
+</suite> <!-- Suite -->

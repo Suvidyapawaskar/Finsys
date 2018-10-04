@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 135.061 sec <<< FAILURE! - in TestSuite
+ExecuteLogin(ej.finsys.modules.Login)  Time elapsed: 20.365 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[FM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+
+ExecuteLogin(ej.finsys.modules.Login)  Time elapsed: 20.345 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[RM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+

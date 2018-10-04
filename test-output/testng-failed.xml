@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Finsys_regression]">
+  <listeners>
+    <listener class-name="ej.finsys.listners.Suite_Listner"/>
+    <listener class-name="ej.finsys.listners.Testcase_Listner"/>
+  </listeners>
+  <test name="TC_082_Verify Authentication process of a finsys user having role of FM(failed)">
+    <parameter name="owner" value="param_owner"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="browser" value="param_browser"/>
+    <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of FM"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="param_url"/>
+    <parameter name="username" value="param_fm_username_"/>
+    <classes>
+      <class name="ej.finsys.modules.Login">
+        <methods>
+          <include name="ExecuteLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.Login -->
+    </classes>
+  </test> <!-- TC_082_Verify Authentication process of a finsys user having role of FM(failed) -->
+  <test name="TC_082_Verify Authentication process of a finsys user having role of RM(failed)">
+    <parameter name="owner" value="param_owner"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="browser" value="param_browser"/>
+    <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of RM"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="param_url"/>
+    <parameter name="username" value="param_rm_username"/>
+    <classes>
+      <class name="ej.finsys.modules.Login">
+        <methods>
+          <include name="ExecuteLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.Login -->
+    </classes>
+  </test> <!-- TC_082_Verify Authentication process of a finsys user having role of RM(failed) -->
+  <test name="TC_083_Verify Creation of a New Company by passing all Valid Details(failed)">
+    <parameter name="owner" value="param_owner"/>
+    <parameter name="country" value="param_country"/>
+    <parameter name="address" value="param_address"/>
+    <parameter name="mobilenumber" value="param_mobilenumber"/>
+    <parameter name="city" value="param_city"/>
+    <parameter name="TC_083" value="Verify Creation of a New Company by passing all Valid Details"/>
+    <parameter name="phonenumber" value="param_phonenumber"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="pandetails" value="param_pandetails"/>
+    <parameter name="url" value="param_url"/>
+    <parameter name="totalemployee" value="param_totalemployee"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="subtype" value="param_subtype"/>
+    <parameter name="companyname" value="param_companyname"/>
+    <parameter name="companytype" value="param_companytype"/>
+    <parameter name="websiteurl" value="param_websiteurl"/>
+    <parameter name="browser" value="param_browsername"/>
+    <parameter name="tindetails" value="param_tindetails"/>
+    <parameter name="state" value="param_state"/>
+    <parameter name="email" value="param_email"/>
+    <parameter name="username" value="param_cfo_username"/>
+    <classes>
+      <class name="ej.finsys.modules.CreateManageCompany">
+        <methods>
+          <include name="createcompany" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.CreateManageCompany -->
+    </classes>
+  </test> <!-- TC_083_Verify Creation of a New Company by passing all Valid Details(failed) -->
+  <test name="TC_084_Verify updated details of the Company are properly reflecting on View Company Page(failed)">
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="address" value="param_address_update"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="companyname" value="param_companyname_update"/>
+    <parameter name="browser" value="CH64"/>
+    <parameter name="phonenumber" value="param_phonenumber_udate"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="http://localhost:90/finsys/login.html"/>
+    <parameter name="email" value="param_email_update"/>
+    <parameter name="totalemployee" value="param_totalemployee_update"/>
+    <parameter name="username" value="param_cfo_username"/>
+    <classes>
+      <class name="ej.finsys.modules.UpdateManageCompany">
+        <methods>
+          <include name="updatecompany" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.UpdateManageCompany -->
+    </classes>
+  </test> <!-- TC_084_Verify updated details of the Company are properly reflecting on View Company Page(failed) -->
+  <test name="TC_085_Verify of Deletion of a Recently added Company whose revenue and expense related information is not available(failed)">
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="companyname" value="param_companyname"/>
+    <parameter name="browser" value="CH64"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="http://localhost:90/finsys/login.html"/>
+    <parameter name="username" value="param_cfo_username"/>
+    <classes>
+      <class name="ej.finsys.modules.DeleteManageCompany">
+        <methods>
+          <include name="deletecompany" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.DeleteManageCompany -->
+    </classes>
+  </test> <!-- TC_085_Verify of Deletion of a Recently added Company whose revenue and expense related information is not available(failed) -->
+  <test name="TC_086_Verify of Deletion of a Company whose revenue and expense related information is available(failed)">
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="companyname" value="param_comnm"/>
+    <parameter name="browser" value="CH64"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="http://localhost:90/finsys/login.html"/>
+    <parameter name="username" value="param_cfo_username"/>
+    <classes>
+      <class name="ej.finsys.modules.DeleteManageCompany">
+        <methods>
+          <include name="deletecompany" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.DeleteManageCompany -->
+    </classes>
+  </test> <!-- TC_086_Verify of Deletion of a Company whose revenue and expense related information is available(failed) -->
+  <test name="TC_088_Verify Creation of a New Leasehold Improvements by passing all Valid Details(failed)">
+    <parameter name="otherds" value="param_otherds"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="waterworkds" value="param_waterworkds"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="companynm" value="param_companynm"/>
+    <parameter name="browser" value="CH64"/>
+    <parameter name="electricworkds" value="param_electricworkds"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="http://localhost:90/finsys/login.html"/>
+    <parameter name="username" value="param_cfo_username"/>
+    <parameter name="levelingds" value="param_levelingds"/>
+    <classes>
+      <class name="ej.finsys.modules.CreateLeaseHoldImprovement">
+        <methods>
+          <include name="Createleadimp" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.CreateLeaseHoldImprovement -->
+    </classes>
+  </test> <!-- TC_088_Verify Creation of a New Leasehold Improvements by passing all Valid Details(failed) -->
+</suite> <!-- Failed suite [Finsys_regression] -->

@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="7" ignored="18" total="50" passed="25">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Finsys_regression" duration-ms="657478" started-at="2018-08-19T14:51:19Z" finished-at="2018-08-19T15:02:16Z">
+    <groups>
+    </groups>
+    <test name="TC_082_Verify Authentication process of a finsys user having role of CFO" duration-ms="72303" started-at="2018-08-19T14:51:19Z" finished-at="2018-08-19T14:52:31Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@71318ec4]" name="closebrowser" duration-ms="10359" started-at="2018-08-19T20:22:21Z" finished-at="2018-08-19T20:22:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@3c0f93f1]" name="ExecuteLaunch" duration-ms="35786" started-at="2018-08-19T20:21:19Z" finished-at="2018-08-19T20:21:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@31610302]" name="ExecuteLogin" duration-ms="25983" started-at="2018-08-19T20:21:55Z" finished-at="2018-08-19T20:22:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of CFO -->
+    <test name="TC_082_Verify Authentication process of a finsys user having role of FM" duration-ms="44352" started-at="2018-08-19T14:52:31Z" finished-at="2018-08-19T14:53:16Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@18eed359]" name="closebrowser" duration-ms="10105" started-at="2018-08-19T20:23:06Z" finished-at="2018-08-19T20:23:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@6536e911]" name="ExecuteLaunch" duration-ms="13686" started-at="2018-08-19T20:22:31Z" finished-at="2018-08-19T20:22:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="FAIL" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@520a3426]" name="ExecuteLogin" duration-ms="20482" started-at="2018-08-19T20:22:45Z" finished-at="2018-08-19T20:23:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_fm_username_]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome dummy[CFO]] but found [Welcome dummy[FM]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[FM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of FM -->
+    <test name="TC_082_Verify Authentication process of a finsys user having role of RM" duration-ms="44280" started-at="2018-08-19T14:53:16Z" finished-at="2018-08-19T14:54:00Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@2b2948e2]" name="closebrowser" duration-ms="10074" started-at="2018-08-19T20:23:50Z" finished-at="2018-08-19T20:24:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@210366b4]" name="ExecuteLaunch" duration-ms="13695" started-at="2018-08-19T20:23:16Z" finished-at="2018-08-19T20:23:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="FAIL" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@eec5a4a]" name="ExecuteLogin" duration-ms="20485" started-at="2018-08-19T20:23:29Z" finished-at="2018-08-19T20:23:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_rm_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome dummy[CFO]] but found [Welcome dummy[RM]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[RM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of RM -->
+    <test name="TC_082_Verify Authentication process of a finsys user having role of ITM" duration-ms="44561" started-at="2018-08-19T14:54:00Z" finished-at="2018-08-19T14:54:45Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@7d907bac]" name="closebrowser" duration-ms="10092" started-at="2018-08-19T20:24:35Z" finished-at="2018-08-19T20:24:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@369f73a2]" name="ExecuteLaunch" duration-ms="14021" started-at="2018-08-19T20:24:00Z" finished-at="2018-08-19T20:24:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="Executeloginwithinvalid(java.lang.String, java.lang.String)[pri:0, instance:ej.finsys.modules.Login@1f28c152]" name="Executeloginwithinvalid" duration-ms="20402" started-at="2018-08-19T20:24:14Z" finished-at="2018-08-19T20:24:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_itm_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Executeloginwithinvalid -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of ITM -->
+    <test name="TC_083_Verify Creation of a New Company by passing all Valid Details" duration-ms="136670" started-at="2018-08-19T14:54:45Z" finished-at="2018-08-19T14:57:01Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@887af79]" name="closebrowser" duration-ms="10182" started-at="2018-08-19T20:26:51Z" finished-at="2018-08-19T20:27:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@4f970963]" name="ExecuteLaunch" duration-ms="12019" started-at="2018-08-19T20:24:45Z" finished-at="2018-08-19T20:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.CreateManageCompany">
+        <test-method status="FAIL" signature="createcompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ej.finsys.modules.CreateManageCompany@7b49cea0]" name="createcompany" duration-ms="99022" started-at="2018-08-19T20:25:12Z" finished-at="2018-08-19T20:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_companyname]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_companytype]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[param_subtype]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[param_address]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[param_phonenumber]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[param_email]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[param_pandetails]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[param_tindetails]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[param_mobilenumber]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[param_websiteurl]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[param_country]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[param_state]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[param_city]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[param_totalemployee]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : Company Already Exists.Please Select different Company Name!!!}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: f4a184b07db23fd19113994895e09bb9
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Shri Technology']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Company Already Exists.Please Select different Company Name!!!}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds: null
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: f4a184b07db23fd19113994895e09bb9
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Shri Technology']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:172)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at ej.finsys.pages.Company.SelectManageCompany(Company.java:337)
+	at ej.finsys.modules.CreateManageCompany.createcompany(CreateManageCompany.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcompany -->
+      </class> <!-- ej.finsys.modules.CreateManageCompany -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin2(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Login@61f8bee4]" name="ExecuteLogin2" duration-ms="15386" started-at="2018-08-19T20:24:57Z" finished-at="2018-08-19T20:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin2 -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_083_Verify Creation of a New Company by passing all Valid Details -->
+    <test name="TC_084_Verify updated details of the Company are properly reflecting on View Company Page" duration-ms="128091" started-at="2018-08-19T14:57:01Z" finished-at="2018-08-19T14:59:10Z">
+      <class name="ej.finsys.modules.UpdateManageCompany">
+        <test-method status="FAIL" signature="updatecompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ej.finsys.modules.UpdateManageCompany@43814d18]" name="updatecompany" duration-ms="83269" started-at="2018-08-19T20:27:34Z" finished-at="2018-08-19T20:28:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_companyname_update]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_address_update]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[param_phonenumber_udate]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[param_email_update]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[param_totalemployee_update]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:179)
+	at ej.finsys.modules.UpdateManageCompany.updatecompany(UpdateManageCompany.java:70)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatecompany -->
+      </class> <!-- ej.finsys.modules.UpdateManageCompany -->
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@5c5a1b69]" name="closebrowser" duration-ms="12396" started-at="2018-08-19T20:28:57Z" finished-at="2018-08-19T20:29:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@5ae63ade]" name="ExecuteLaunch" duration-ms="17039" started-at="2018-08-19T20:27:01Z" finished-at="2018-08-19T20:27:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:90/finsys/login.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin2(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Login@610694f1]" name="ExecuteLogin2" duration-ms="15369" started-at="2018-08-19T20:27:18Z" finished-at="2018-08-19T20:27:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin2 -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_084_Verify updated details of the Company are properly reflecting on View Company Page -->
+    <test name="TC_085_Verify of Deletion of a Recently added Company whose revenue and expense related information is not available" duration-ms="60526" started-at="2018-08-19T14:59:10Z" finished-at="2018-08-19T15:00:10Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@3cef309d]" name="closebrowser" duration-ms="12405" started-at="2018-08-19T20:29:58Z" finished-at="2018-08-19T20:30:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@6ebc05a6]" name="ExecuteLaunch" duration-ms="12075" started-at="2018-08-19T20:29:10Z" finished-at="2018-08-19T20:29:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:90/finsys/login.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.DeleteManageCompany">
+        <test-method status="FAIL" signature="deletecompany(java.lang.String)[pri:0, instance:ej.finsys.modules.DeleteManageCompany@50b494a6]" name="deletecompany" duration-ms="20633" started-at="2018-08-19T20:29:37Z" finished-at="2018-08-19T20:29:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_companyname]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[@field='name']/div[.='Sai Technology']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: b95573675c661e20e8ff524d101115df
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Sai Technology']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@field='name']/div[.='Sai Technology']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: b95573675c661e20e8ff524d101115df
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Sai Technology']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at ej.finsys.pages.Company.SelectManageCompany(Company.java:337)
+	at ej.finsys.modules.DeleteManageCompany.deletecompany(DeleteManageCompany.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecompany -->
+      </class> <!-- ej.finsys.modules.DeleteManageCompany -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin2(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Login@6e6c3152]" name="ExecuteLogin2" duration-ms="15409" started-at="2018-08-19T20:29:22Z" finished-at="2018-08-19T20:29:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin2 -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_085_Verify of Deletion of a Recently added Company whose revenue and expense related information is not available -->
+    <test name="TC_086_Verify of Deletion of a Company whose revenue and expense related information is available" duration-ms="62225" started-at="2018-08-19T15:00:10Z" finished-at="2018-08-19T15:01:12Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@57855c9a]" name="closebrowser" duration-ms="12366" started-at="2018-08-19T20:31:00Z" finished-at="2018-08-19T20:31:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@6321e813]" name="ExecuteLaunch" duration-ms="13838" started-at="2018-08-19T20:30:10Z" finished-at="2018-08-19T20:30:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:90/finsys/login.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.DeleteManageCompany">
+        <test-method status="FAIL" signature="deletecompany(java.lang.String)[pri:0, instance:ej.finsys.modules.DeleteManageCompany@22a67b4]" name="deletecompany" duration-ms="20641" started-at="2018-08-19T20:30:39Z" finished-at="2018-08-19T20:31:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_comnm]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//td[@field='name']/div[.='Sai Technology']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 48c8a543e2f30b166c6d89fd8b6c20d3
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Sai Technology']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@field='name']/div[.='Sai Technology']"}
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.39.562718 (9a2698cba08cf5..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 68.0.3440.106, webStorageEnabled: true}
+Session ID: 48c8a543e2f30b166c6d89fd8b6c20d3
+*** Element info: {Using=xpath, value=//td[@field='name']/div[.='Sai Technology']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at ej.finsys.pages.Company.SelectManageCompany(Company.java:337)
+	at ej.finsys.modules.DeleteManageCompany.deletecompany(DeleteManageCompany.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletecompany -->
+      </class> <!-- ej.finsys.modules.DeleteManageCompany -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin2(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Login@79be0360]" name="ExecuteLogin2" duration-ms="15371" started-at="2018-08-19T20:30:24Z" finished-at="2018-08-19T20:30:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin2 -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_086_Verify of Deletion of a Company whose revenue and expense related information is available -->
+    <test name="TC_088_Verify Creation of a New Leasehold Improvements by passing all Valid Details" duration-ms="64041" started-at="2018-08-19T15:01:12Z" finished-at="2018-08-19T15:02:16Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@4bbfb90a]" name="closebrowser" duration-ms="10089" started-at="2018-08-19T20:32:06Z" finished-at="2018-08-19T20:32:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@68bbe345]" name="ExecuteLaunch" duration-ms="12445" started-at="2018-08-19T20:31:12Z" finished-at="2018-08-19T20:31:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH64]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:90/finsys/login.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.CreateLeaseHoldImprovement">
+        <test-method status="FAIL" signature="Createleadimp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ej.finsys.modules.CreateLeaseHoldImprovement@7494e528]" name="Createleadimp" duration-ms="26084" started-at="2018-08-19T20:31:40Z" finished-at="2018-08-19T20:32:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_companynm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_levelingds]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[param_electricworkds]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[param_waterworkds]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[param_otherds]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate element with text: Aahana Technologies(771)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Aahana Technologies(771)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-IUV45J7', ip: '192.168.1.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_77'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at ej.finsys.pages.LeaseholdImprovement.SelectCompany(LeaseholdImprovement.java:72)
+	at ej.finsys.modules.CreateLeaseHoldImprovement.Createleadimp(CreateLeaseHoldImprovement.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Createleadimp -->
+      </class> <!-- ej.finsys.modules.CreateLeaseHoldImprovement -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin2(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Login@30b8a058]" name="ExecuteLogin2" duration-ms="15398" started-at="2018-08-19T20:31:25Z" finished-at="2018-08-19T20:31:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin2 -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_088_Verify Creation of a New Leasehold Improvements by passing all Valid Details -->
+  </suite> <!-- Finsys_regression -->
+</testng-results>

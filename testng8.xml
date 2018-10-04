@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Finsys_regression">  
+ <listeners>
+ 	<listener class-name="ej.finsys.listners.Suite_Listner"></listener>
+ 	<listener class-name="ej.finsys.listners.Testcase_Listner"></listener>
+ </listeners>
+<test name = "TC_082_Verify Authentication process of a finsys user having role of CFO">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of CFO"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>
+ 
+ <test name = "TC_082_Verify Authentication process of a finsys user having role of FM">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of FM"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_fm_username_"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>    
+      
+ <test name = "TC_082_Verify Authentication process of a finsys user having role of RM">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of RM"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_rm_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>  
+      </test>              
+ </suite> <!-- Suite -->

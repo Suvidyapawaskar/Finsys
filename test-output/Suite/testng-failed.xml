@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="TC_082_Verify Authentication process of a finsys user having role of either CFO/FM/COH/RM/ITM/ABM(failed)">
+    <parameter name="Owner" value="Suvidya"/>
+    <parameter name="UserName" value="dummycfo"/>
+    <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of either CFO/FM/COH/RM/ITM/ABM"/>
+    <parameter name="URL" value="http://localhost:90/finsys/login.html"/>
+    <parameter name="TimeOutSeconds" value="5000"/>
+    <parameter name="Browser" value="CH64"/>
+    <parameter name="Password" value="passw0rd"/>
+    <classes>
+      <class name="ej.finsys.modules.Login">
+        <methods>
+          <include name="ExecuteLogin"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.Login -->
+    </classes>
+  </test> <!-- TC_082_Verify Authentication process of a finsys user having role of either CFO/FM/COH/RM/ITM/ABM(failed) -->
+</suite> <!-- Failed suite [Suite] -->

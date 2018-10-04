@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Finsys_regression">  
+ <listeners>
+ 	<listener class-name="ej.finsys.listners.Suite_Listner"></listener>
+ 	<listener class-name="ej.finsys.listners.Testcase_Listner"></listener>
+ </listeners>
+<test name = "TC_082_Verify Authentication process of a finsys user having role of CFO">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of CFO"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>
+ 
+ <test name = "TC_082_Verify Authentication process of a finsys user having role of FM">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of FM"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_fm_username_"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>    
+      
+ <test name = "TC_082_Verify Authentication process of a finsys user having role of RM">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of RM"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_rm_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>  
+      </test>  
+<test name = "TC_082_Verify Authentication process of a finsys user having role of ITM">
+      <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of ITM"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browser"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_itm_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="Executeloginwithinvalid"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>  
+      </test>      
+      
+<test name = "TC_083_Verify Creation of a New Company by passing all Valid Details">
+      <parameter name="TC_083" value="Verify Creation of a New Company by passing all Valid Details"></parameter>
+      <parameter name="owner" value="param_owner"></parameter>
+      <parameter name="browser" value="param_browsername"></parameter>
+      <parameter name="url" value="param_url"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="companyname" value="param_companyname"></parameter>
+      <parameter name="companytype" value="param_companytype"></parameter>
+      <parameter name="subtype" value="param_subtype"></parameter>
+      <parameter name="address" value="param_address"></parameter>
+      <parameter name="phonenumber" value="param_phonenumber"></parameter>
+      <parameter name="email" value="param_email"></parameter>
+      <parameter name="pandetails" value="param_pandetails"></parameter>
+      <parameter name="tindetails" value="param_tindetails"></parameter>
+      <parameter name="mobilenumber" value="param_mobilenumber"></parameter>
+      <parameter name="websiteurl" value="param_websiteurl"></parameter>
+      <parameter name="country" value="param_country"></parameter>
+      <parameter name="state" value="param_state"></parameter>
+      <parameter name="city" value="param_city"></parameter>
+      <parameter name="totalemployee" value="param_totalemployee"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin2"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.CreateManageCompany">
+      <methods>
+      <include name="createcompany"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>
+  
+<test name="TC_084_Verify updated details of the Company are properly reflecting on View Company Page">     
+      <parameter name ="browser" value="CH64"></parameter>
+      <parameter name="url" value="http://localhost:90/finsys/login.html"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="companyname" value="param_companyname_update"></parameter>
+      <parameter name="address" value="param_address_update"></parameter>
+      <parameter name="phonenumber" value="param_phonenumber_udate"></parameter>
+      <parameter name="email" value="param_email_update"></parameter>
+      <parameter name="totalemployee" value="param_totalemployee_update"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin2"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.UpdateManageCompany">
+      <methods>
+      <include name="updatecompany"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>
+      </test>
+  
+<test name="TC_085_Verify of Deletion of a Recently added Company whose revenue and expense related information is not available">     
+      <parameter name ="browser" value="CH64"></parameter>
+      <parameter name="url" value="http://localhost:90/finsys/login.html"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="companyname" value="param_companyname"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin2"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.DeleteManageCompany">
+      <methods>
+      <include name="deletecompany"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>            
+       </test>       
+  
+<test name="TC_086_Verify of Deletion of a Company whose revenue and expense related information is available">     
+      <parameter name ="browser" value="CH64"></parameter>
+      <parameter name="url" value="http://localhost:90/finsys/login.html"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="companyname" value="param_comnm"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin2"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.DeleteManageCompany">
+      <methods>
+      <include name="deletecompany"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>            
+      </test>                  
+       
+<test name="TC_088_Verify Creation of a New Leasehold Improvements by passing all Valid Details">     
+      <parameter name ="browser" value="CH64"></parameter>
+      <parameter name="url" value="http://localhost:90/finsys/login.html"></parameter>
+      <parameter name="timeoutseconds" value="5000"></parameter>
+      <parameter name="username" value="param_cfo_username"></parameter>
+      <parameter name="password" value="param_password"></parameter>
+      <parameter name="timeseconds" value="5000"></parameter>
+      <parameter name="companynm" value="param_companynm"></parameter>
+      <parameter name="levelingds" value="param_levelingds"></parameter>
+      <parameter name="electricworkds" value="param_electricworkds"></parameter>
+      <parameter name="waterworkds" value="param_waterworkds"></parameter>
+      <parameter name="otherds" value="param_otherds"></parameter>
+      <parameter name="browsername" value="param_browsername"></parameter>
+      <classes>
+      <class name="ej.finsys.modules.Launch">
+      <methods>
+      <include name="ExecuteLaunch"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.Login">
+      <methods>
+      <include name="ExecuteLogin2"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.modules.CreateLeaseHoldImprovement">
+      <methods>
+      <include name="Createleadimp"></include>
+      </methods>
+      </class>
+      <class name="ej.finsys.utility.Close_browser" >
+      <methods>
+      <include name="closebrowser"></include>
+      </methods>
+      </class>
+      </classes>            
+      </test>          
+ </suite> <!-- Suite -->

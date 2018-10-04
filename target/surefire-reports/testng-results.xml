@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="6" total="15" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Finsys_regression" duration-ms="133411" started-at="2018-08-03T05:47:51Z" finished-at="2018-08-03T05:50:04Z">
+    <groups>
+    </groups>
+    <test name="TC_082_Verify Authentication process of a finsys user having role of CFO" duration-ms="48339" started-at="2018-08-03T05:47:51Z" finished-at="2018-08-03T05:48:39Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@2c9f9fb0]" name="closebrowser" duration-ms="10098" started-at="2018-08-03T11:18:29Z" finished-at="2018-08-03T11:18:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@3551a94]" name="ExecuteLaunch" duration-ms="12734" started-at="2018-08-03T11:17:51Z" finished-at="2018-08-03T11:18:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="PASS" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@735b478]" name="ExecuteLogin" duration-ms="25459" started-at="2018-08-03T11:18:03Z" finished-at="2018-08-03T11:18:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_cfo_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of CFO -->
+    <test name="TC_082_Verify Authentication process of a finsys user having role of FM" duration-ms="42514" started-at="2018-08-03T05:48:39Z" finished-at="2018-08-03T05:49:22Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@b97c004]" name="closebrowser" duration-ms="10075" started-at="2018-08-03T11:19:11Z" finished-at="2018-08-03T11:19:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@3c09711b]" name="ExecuteLaunch" duration-ms="12062" started-at="2018-08-03T11:18:39Z" finished-at="2018-08-03T11:18:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="FAIL" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@5cc7c2a6]" name="ExecuteLogin" duration-ms="20365" started-at="2018-08-03T11:18:51Z" finished-at="2018-08-03T11:19:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_fm_username_]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome dummy[CFO]] but found [Welcome dummy[FM]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[FM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of FM -->
+    <test name="TC_082_Verify Authentication process of a finsys user having role of RM" duration-ms="42477" started-at="2018-08-03T05:49:22Z" finished-at="2018-08-03T05:50:04Z">
+      <class name="ej.finsys.utility.Close_browser">
+        <test-method status="PASS" signature="closebrowser(java.lang.String)[pri:0, instance:ej.finsys.utility.Close_browser@5afa04c]" name="closebrowser" duration-ms="10069" started-at="2018-08-03T11:19:54Z" finished-at="2018-08-03T11:20:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browsername]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- ej.finsys.utility.Close_browser -->
+      <class name="ej.finsys.modules.Launch">
+        <test-method status="PASS" signature="ExecuteLaunch(java.lang.String, java.lang.String, int)[pri:0, instance:ej.finsys.modules.Launch@2344fc66]" name="ExecuteLaunch" duration-ms="12046" started-at="2018-08-03T11:19:22Z" finished-at="2018-08-03T11:19:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_browser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_url]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLaunch -->
+      </class> <!-- ej.finsys.modules.Launch -->
+      <class name="ej.finsys.modules.Login">
+        <test-method status="FAIL" signature="ExecuteLogin(java.lang.String, java.lang.String, java.lang.Integer)[pri:0, instance:ej.finsys.modules.Login@458ad742]" name="ExecuteLogin" duration-ms="20352" started-at="2018-08-03T11:19:34Z" finished-at="2018-08-03T11:19:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[param_rm_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[param_password]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5000]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome dummy[CFO]] but found [Welcome dummy[RM]]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome dummy[CFO]] but found [Welcome dummy[RM]]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at ej.finsys.modules.Login.ExecuteLogin(Login.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExecuteLogin -->
+      </class> <!-- ej.finsys.modules.Login -->
+    </test> <!-- TC_082_Verify Authentication process of a finsys user having role of RM -->
+  </suite> <!-- Finsys_regression -->
+</testng-results>

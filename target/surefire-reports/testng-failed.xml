@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Finsys_regression]">
+  <listeners>
+    <listener class-name="ej.finsys.listners.Suite_Listner"/>
+    <listener class-name="ej.finsys.listners.Testcase_Listner"/>
+  </listeners>
+  <test name="TC_082_Verify Authentication process of a finsys user having role of FM(failed)">
+    <parameter name="owner" value="param_owner"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="browser" value="param_browser"/>
+    <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of FM"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="param_url"/>
+    <parameter name="username" value="param_fm_username_"/>
+    <classes>
+      <class name="ej.finsys.modules.Login">
+        <methods>
+          <include name="ExecuteLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.Login -->
+    </classes>
+  </test> <!-- TC_082_Verify Authentication process of a finsys user having role of FM(failed) -->
+  <test name="TC_082_Verify Authentication process of a finsys user having role of RM(failed)">
+    <parameter name="owner" value="param_owner"/>
+    <parameter name="timeoutseconds" value="5000"/>
+    <parameter name="password" value="param_password"/>
+    <parameter name="timeseconds" value="5000"/>
+    <parameter name="browser" value="param_browser"/>
+    <parameter name="TC_082" value="Verify Authentication process of a finsys user having role of RM"/>
+    <parameter name="browsername" value="param_browsername"/>
+    <parameter name="url" value="param_url"/>
+    <parameter name="username" value="param_rm_username"/>
+    <classes>
+      <class name="ej.finsys.modules.Login">
+        <methods>
+          <include name="ExecuteLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ej.finsys.modules.Login -->
+    </classes>
+  </test> <!-- TC_082_Verify Authentication process of a finsys user having role of RM(failed) -->
+</suite> <!-- Failed suite [Finsys_regression] -->
